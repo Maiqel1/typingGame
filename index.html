@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maiqels typing game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-white ">
+  <header class="bg-secondary text-center p-3 mb-5">
+    <h1>Maiqels typing game</h1>
+  </header>
+  <div class="container text-center">
+
+    <!-- Word & Input -->
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <p class="lead">Type The Given Word Within
+          <span class="text-success" id="seconds">5</span> Seconds:</p>
+        <h2 class="display-2 mb-5" id="current-word" style="font-size: 40px;">hello</h2>
+        <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
+        <br>
+        <h3 style="font-size: x-large;" class="mt-2">Difficulty: <p id="message2">Easy</p></h3>
+        <br>
+        <h4 class="mt-3" id="message" style="font-size: 30px;"></h4>
+
+        <!-- Time & Score Columns -->
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h3>Time Left:
+              <span id="time">0</span>
+            </h3>
+          </div>
+          <div class="col-md-6">
+            <h3>Score:
+              <span id="score">0</span>
+            </h3>
+          </div>
+          <br><br>
+          <div class="col">
+            <!-- <h3>High Score:
+              <span id="highscore">0</span>
+            </h3> -->
+          </div>
+        </div>
+
+        <!-- <div>
+         <span style="font-size: 30px;"> Select Level:</span> <select name="" id="" class="mt-5 col-md-6"> 
+            <option value="" id="easyLevel">Easy</option>
+            <option value="" id="mediumLevel">Medium</option>
+            <option value="" id="hardLevel">Hard</option>
+          </select>
+        </div> -->
+
+        <!-- Instructions -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="card card-body bg-secondary text-white">
+              <h5>Instructions</h5>
+              <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
+                will reset</p>
+                <p>The difficulty increases as you progress</p>
+                <p>Easy: 5s <br>Medium: 4s <br> Hard: 3s <br> Superstar: 2s</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
